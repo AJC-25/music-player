@@ -12,6 +12,11 @@ body{
     margin: 2rem auto;     /* 2 top&bottom, auto left&right */
     padding: 2rem;
     text-align: center;
+    background-image: url("background\ music\ player.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 #project_ref{
@@ -19,24 +24,34 @@ body{
 }
 
 .player{
-    background: radial-gradient(#211e24, #4f3341);
+    font-size: small;
+    background: radial-gradient( #2c2a2a,#595656);
+    padding: 2rem;
+    border-radius: 2rem;
+    margin-bottom: 0.75rem;
+}
+
+.songs{
+    background: radial-gradient( #2c2a2a,#595656);
     padding: 2rem;
     border-radius: 2rem;
 }
 
 img{
-    width: 50%;
+    width: 30%;
+    padding: 2rem;
+    margin: 0.5rem 0.5rem;
 }
 
 #controls{
-    border: 1px lightslategrey solid;
+    border: 1px #000000 solid;
     border-radius: 1rem;
     padding: 1.6rem;
 }
 
 .control_wrapper > span {
     cursor: pointer;
-    color: lightslategrey;
+    color: #000000;
     font-size: 6rem;
     padding: 2rem;
 }
@@ -49,13 +64,19 @@ img{
     overflow: hidden;
 }
 
+#songs-header{
+    padding: 0.5rem;
+    margin: 0.5rem 0.5rem;
+}
+
 li{
     cursor: pointer;
     padding: 1.5rem;
 }
 
 li:hover{
-    background: #f3644b;
+    background: #F8C0BF;
+    color: #2c2a2a;
 }
 
 a{
@@ -66,7 +87,19 @@ progress{
     width: 100%;
     height: 3rem;
     margin-bottom: 1rem;
+    /* For IE10 */
+    background: #C4E7E1;
 }
+
+/* For Firefox */
+progress::-moz-progress-bar {
+    background: #C4E7E1;
+}
+  
+/* For Chrome or Safari */
+progress::-webkit-progress-value {
+    background: #C4E7E1;
+}  
 
 .pulse{
     animation: pulse;
