@@ -119,6 +119,7 @@ progress::-webkit-progress-value {
     margin: 0;
     padding: 0;
     background-color: lightgrey;
+    border-radius: 5px;
 }
 
 @keyframes pulse{
