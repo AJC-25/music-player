@@ -107,6 +107,20 @@ progress::-webkit-progress-value {
     animation-duration: 0.4s;
 }
 
+#logo{
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+}
+
+#github{
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    background-color: lightgrey;
+}
+
 @keyframes pulse{
     from{
         transform: scale(1);    /*same size at beginning*/
